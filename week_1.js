@@ -3,16 +3,16 @@
  */
 
 function difference(arr, itemsToExclude) {
-	let result = arr.filter((element) => !itemsToExclude.includes(element));
-	  console.log(result)
+  let result = arr.filter((element) => !itemsToExclude.includes(element));
+  console.log(result);
 }
 
 difference([2, 1, 5], [2, 3]);
 
-
 /**
  * метод принимает массив обьектов array и ключ value по которому нужно эти обьекты сгруппировать
  */
+
 const persons = [
   { gender: 'male', name: 'Max'},
   { gender: 'male', name: 'Fred'},
@@ -44,19 +44,18 @@ function flatten(array) {
 
 console.log(flatten([1, [2, 3], 4, 5]));
 
-
 /**
  * метод должен убрать все повторяющиеся элементы из массива
  */
+
 function uniq(array) {
-    return array.sort().filter(function(item, position, arr) {
-        return !position || item != arr[position - 1];
-    })
+  return array.sort().filter(function(item, position, arr) {
+    return !position || item != arr[position - 1];
+  })
 }
 
 console.log(uniq([2, 1, 2]));
 console.log(uniq([2, 1, 5, 6, 8, 8, 2]));
-
 
 /**
  *
